@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>Calculate</title>
+</head>
+<body>
+<div id="container">
+    <h1>Давай поделим наш счет!!!</h1>
+    <form>
+<p>Счет 💰</p>
+<span>$
+<input type="text" id="bill" placeholder="Счет">
+</span>
+
+<p>😎Кол-во людей</p>
+<span><input type="text" id="people" placeholder="Сколько человек?"></span>
+
+<p>💗Тебе понравился сервис?💗</p>
+
+<button id="addTip">Добавить чаевые!</button>
+
+<select  id="tip">
+    <option disabled>Выберать...</option>
+    <option value="0.30">WOW 30% 💗</option>
+    <option value="0.20" >Отличный сервис 20%</option>
+    <option value="0.10"> OK! 10%</option>
+    <option value="0.00" selected>Без чаевых!</option>
+</select>
+<button id="btn">Посчитать</button>
+</form>
+<div id="showTotalAmountToPay">
+    <div id="billSplit">
+        <p>Счет</p>
+        <span>$</span>
+        <span id="divedvBill"></span>
+        <span>за человека</span>
+    </div>
+   <div id="totalTip">
+        <p>Чаевые</p>
+        <span>$</span>
+        <span id="divedvTip"></span>
+        <span>за человека</span>
+    </div>
+    <div id="totalAmount">
+        <p>Итого</p>
+        <span>$</span>
+        <span id="billAndTip"></span>
+        <span>за человека</span>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
